@@ -41,7 +41,7 @@ function watchSVG(w, live){
   <circle cx="200" cy="200" r="150" fill="#000" fill-opacity=".35"/>
   <circle cx="200" cy="200" r="142" fill="url(#f${w.name.length}${live?'l':''})"/>
   ${ticks}
-  <text x="200" y="125" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="20" letter-spacing="6" fill="${w.ink}">CHRONOS</text>
+  <text x="200" y="125" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="17" letter-spacing="4" fill="${w.ink}">TIME MAHAL</text>
   <text x="200" y="285" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing="3" fill="${w.ink}" opacity=".7">AUTOMATIC · SWISS MADE</text>
   <g ${style('hr',h*30,43200)}><polygon points="194,200 200,120 206,200 200,212" fill="${w.ink}"/></g>
   <g ${style('min',m*6,3600)}><polygon points="196,200 200,80 204,200 200,214" fill="${w.ink}"/></g>
