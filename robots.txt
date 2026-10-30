@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://3ppuubbgg64-png.github.io/watches/sitemap.xml

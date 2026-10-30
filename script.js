@@ -19,7 +19,7 @@ const watches = [
    img:'photo-1542496658-e33a6d0d50f6'}
 ];
 
-const fmt = n => '$' + n.toLocaleString();
+const fmt = n => 'Rs ' + (Math.round(n * 280 / 1000) * 1000).toLocaleString('en-PK');
 
 function watchSVG(w, live){
   let ticks = '';
