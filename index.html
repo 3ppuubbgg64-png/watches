@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CHRONOS — Luxury Watches</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo">CHRONOS</a>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#craft">Craftsmanship</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-bg" data-parallax="0.3"></div>
+  <div class="hero-text">
+    <p class="eyebrow reveal">Swiss Made · Since 1892</p>
+    <h1 class="split" data-split>Time, Perfected.</h1>
+    <p class="lead reveal">Hand-assembled movements. Sapphire crystals. A legacy you wear on your wrist.</p>
+    <div class="reveal"><a href="#collection" class="btn">Explore Collection</a></div>
+  </div>
+  <div class="hero-watch">
+    <svg viewBox="0 0 400 400" id="heroWatch" aria-label="Animated watch"></svg>
+  </div>
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<section class="marquee"><div class="track">
+  <span>AUTOMATIC</span><span>CHRONOGRAPH</span><span>TOURBILLON</span><span>SAPPHIRE</span><span>SWISS MADE</span><span>MOONPHASE</span>
+  <span>AUTOMATIC</span><span>CHRONOGRAPH</span><span>TOURBILLON</span><span>SAPPHIRE</span><span>SWISS MADE</span><span>MOONPHASE</span>
+</div></section>
+
+<section class="section" id="collection">
+  <h2 class="title reveal">The Collection</h2>
+  <p class="sub reveal">Six icons. Each one a statement.</p>
+  <div class="filters reveal">
+    <button class="chip active" data-f="all">All</button>
+    <button class="chip" data-f="classic">Classic</button>
+    <button class="chip" data-f="sport">Sport</button>
+    <button class="chip" data-f="luxury">Luxury</button>
+  </div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="stats">
+  <div class="stat reveal"><b data-count="130">0</b><span>Years of heritage</span></div>
+  <div class="stat reveal"><b data-count="320">0</b><span>Parts per movement</span></div>
+  <div class="stat reveal"><b data-count="72">0</b><span>Hour power reserve</span></div>
+  <div class="stat reveal"><b data-count="40">0</b><span>Countries served</span></div>
+</section>
+
+<section class="section craft" id="craft">
+  <div class="craft-img reveal-left">
+    <img src="https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?auto=format&fit=crop&w=900&q=70" alt="Watchmaker at work" onerror="this.remove()">
+  </div>
+  <div class="craft-text reveal-right">
+    <h2 class="title left">Crafted by hand.<br>Measured in microns.</h2>
+    <p>Every Chronos watch passes 1,000 hours of testing. Our master watchmakers assemble each movement under a loupe, regulating it to within -2/+2 seconds a day.</p>
+    <ul>
+      <li>Sapphire crystal, triple anti-reflective</li>
+      <li>316L steel &amp; 18k gold cases</li>
+      <li>Water resistant to 300 m</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <h2 class="title reveal">Gallery</h2>
+  <div class="gallery">
+    <figure class="reveal"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=70" alt="Watch" onerror="this.parentElement.remove()"></figure>
+    <figure class="reveal"><img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=700&q=70" alt="Watch" onerror="this.parentElement.remove()"></figure>
+    <figure class="reveal"><img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=700&q=70" alt="Watch" onerror="this.parentElement.remove()"></figure>
+    <figure class="reveal"><img src="https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=700&q=70" alt="Watch" onerror="this.parentElement.remove()"></figure>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2 class="title reveal">Visit Our Boutique</h2>
+  <p class="sub reveal">Book a private viewing.</p>
+  <form class="form reveal" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thank you ✓'">
+    <input placeholder="Your name" required>
+    <input type="email" placeholder="Email" required>
+    <button class="btn">Request Appointment</button>
+  </form>
+</section>
+
+<footer>© 2026 CHRONOS. All rights reserved.</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button class="close" id="close">×</button>
+    <div class="modal-img" id="mImg"></div>
+    <div><h3 id="mName"></h3><p id="mDesc"></p><p class="price" id="mPrice"></p><a href="#contact" class="btn" id="mBtn">Enquire</a></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
